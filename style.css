@@ -39,10 +39,10 @@ main{
     margin: 0 auto;
     max-width: 1400px;
     min-width: 1400px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32%, auto));
+    gap: 10px 20px;
 }
 
 .moviecards{
