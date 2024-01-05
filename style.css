@@ -17,6 +17,7 @@ h1{
     font-size: 20px;
     line-height: 70px;
     text-align: center;
+    display: inline-block;
 }
 
 input{
@@ -31,11 +32,18 @@ button{
     font-size: 17px;
     font-weight: 600;
 }
-main{
+/* main #main_container{
+    background-color: antiquewhite;
+} */
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     background-color: antiquewhite;
 }
-
-#container{
+#popcontainer,
+#comcontainer{
     margin: 0 auto;
     max-width: 1400px;
     min-width: 1400px;
@@ -45,13 +53,15 @@ main{
     gap: 10px 20px;
 }
 
-.moviecards{
+.moviecards,
+.comcards{
     margin: 20px 40px;
     border-radius: 5px;
     box-shadow: 20px 0px 30px 0 ;
 }
 
-.moviecards:hover{
+.moviecards:hover,
+.comcards:hover{
     cursor: pointer;
 }
 
@@ -65,4 +75,14 @@ p{
 }
 p:last-child{
     font-weight: 600;
+}
+
+#populer_movies_btn,
+#comming_movies_btn{
+    width: 180px;
+    height: 70px;
+}
+
+.none{
+    display: none;
 }

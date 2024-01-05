@@ -9,14 +9,26 @@
 <body>
     
     <h1>영화 리스트</h1>
-    <form id="searchContainer"> 
-        <label for="movie_serch">영화 검색 : </label>
-        <input type="text" id="movie_serch" name="movie_serch" placeholder="영화 제목을 검색해 보세요">
-        <button type="submit" id="submitbtn">검색</button>
-    </form>
+    <nav>
+        <div>
+            <button id="populer_movies_btn"> populer movies </button>
+            <button id="comming_movies_btn"> Upcomming movies </button>
+        </div>
+        <h2 id="navName" style="line-height: 60px;">인기영화</h2>
+        <form id="searchContainer"> 
+            <label for="movie_serch">영화 검색 : </label>
+            <input type="text" id="movie_serch" name="movie_serch" placeholder="영화 제목을 검색해 보세요">
+            <button type="submit" id="submitbtn">검색</button>
+        </form>
+    </nav>
     <hr>
     <main>
-        <div id="container"></div>
+        <div id="main_container">
+            <div id="popcontainer"></div>
+            <div id="comcontainer">
+                <!-- <div class="comcards" style="width: 300px; height: 300px; background-color: black; display: none;"></div> -->
+            </div>
+        </div>
     </main>
     <script src="./movie_list.js"></script>
 </body>
