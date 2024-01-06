@@ -1,3 +1,6 @@
+import config from "./config.js";
+const { API_KEY } = config;
+
 const popcontainer = document.querySelector("#popcontainer");
 const comcontainer = document.querySelector("#comcontainer");
 const searchContainer = document.querySelector("#searchContainer");
@@ -11,7 +14,7 @@ const options = {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwNTEwZDdmNWYzMmRlMGQ1ZGJmYmZhYTQzYzU1MTlmMyIsInN1YiI6IjY1OTYzYTkxMGU2NGFmNDAxMThjMTkxYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QB8-UFSN1x6St9D-218WxnUeZVQFaw9-h8zZXbF1pcM'
+        Authorization: API_KEY
     }
 };
 
@@ -52,7 +55,7 @@ Promise.all(urls.map(url => fetchData(url)))
                     `;
                 return div;
             });
-            
+
             // totmovieCards += movieCards.map(div => div); // 안되는 이유
             totmovieCards.push(...movieCards);
 
@@ -256,4 +259,3 @@ Promise.all(urls.map(url => fetchData(url)))
 
 //     })
 //     .catch(err => console.error(err));
-
