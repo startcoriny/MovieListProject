@@ -1,2 +1,6 @@
-<h1>프로젝트 배포 페이지</h1>
-<a href=http://127.0.0.1:5500/index.html>영화리스트 검색 페이지</a>
+# Movie Web Page with Search and change commingmovies or populermovies
+개인프로젝트 영화 리스트 검색 페이지
+
+## 링크
+Movie list page
+
