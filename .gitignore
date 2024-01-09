@@ -4,4 +4,4 @@
 
 
 # github에 파일을 포함시켜서 올리면 api정보를 가져오지 못해서 배포를 위한 주석처리
-#config.js
+# config.js
